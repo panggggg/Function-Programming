@@ -6,10 +6,8 @@ def fizz_buzz_plus(number):
     length_divide_by = len(list_divide)   
     text = "" 
     for i in range(length_divide_by):
-        result = list_result[i]
-        divisible_by = list_divide[i]
-        if number % divisible_by == 0:
-            text += result
+        if number % list_divide[i] == 0:
+            text += list_result[i]
             print(text)
 
     return number if text == "" else text
